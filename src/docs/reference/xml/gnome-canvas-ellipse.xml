@@ -1,0 +1,70 @@
+<refentry id="GnomeCanvasEllipse">
+<refmeta>
+<refentrytitle role="top_of_page" id="GnomeCanvasEllipse.top_of_page">GnomeCanvasEllipse</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMECANVAS Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>GnomeCanvasEllipse</refname>
+<refpurpose>Canvas item for drawing ellipses and circles</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="GnomeCanvasEllipse.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+#include &lt;libgnomecanvas/libgnomecanvas.h&gt;
+
+                    <link linkend="GnomeCanvasEllipse-struct">GnomeCanvasEllipse</link>;
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="GnomeCanvasEllipse.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GnomeCanvasItem">GnomeCanvasItem</link>
+                     +----<link linkend="GnomeCanvasShape">GnomeCanvasShape</link>
+                           +----<link linkend="GnomeCanvasRE">GnomeCanvasRE</link>
+                                 +----GnomeCanvasEllipse
+</synopsis>
+</refsect1>
+
+
+
+
+
+
+
+
+<refsect1 id="GnomeCanvasEllipse.description" role="desc">
+<title role="desc.title">Description</title>
+
+<para>
+A canvas item for drawing ellipses and circles. The parameters are
+defined in the parent classes including <link linkend="GnomeCanvasRE"><type>GnomeCanvasRE</type></link> which is shared with
+<link linkend="GnomeCanvasRect"><type>GnomeCanvasRect</type></link> items as well.
+</para>
+</refsect1>
+
+<refsect1 id="GnomeCanvasEllipse.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomeCanvasEllipse-struct" role="struct">
+<title>GnomeCanvasEllipse</title>
+<indexterm zone="GnomeCanvasEllipse-struct"><primary>GnomeCanvasEllipse</primary></indexterm>
+<programlisting>typedef struct _GnomeCanvasEllipse GnomeCanvasEllipse;</programlisting>
+<para>
+This structure should not be accessed directly. Use the object's properties
+for querying or changing its parameters.
+</para></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

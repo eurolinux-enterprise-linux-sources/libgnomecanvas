@@ -1,0 +1,89 @@
+<refentry id="GnomeCanvasBpath">
+<refmeta>
+<refentrytitle role="top_of_page" id="GnomeCanvasBpath.top_of_page">GnomeCanvasBpath</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMECANVAS Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>GnomeCanvasBpath</refname>
+<refpurpose>Bezier path canvas item</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="GnomeCanvasBpath.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+#include &lt;libgnomecanvas/libgnomecanvas.h&gt;
+
+                    <link linkend="GnomeCanvasBpath-struct">GnomeCanvasBpath</link>;
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="GnomeCanvasBpath.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GnomeCanvasItem">GnomeCanvasItem</link>
+                     +----<link linkend="GnomeCanvasShape">GnomeCanvasShape</link>
+                           +----GnomeCanvasBpath
+</synopsis>
+</refsect1>
+
+
+
+
+
+<refsect1 id="GnomeCanvasBpath.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="GnomeCanvasBpath--bpath">bpath</link>&quot;                    <link linkend="GnomeCanvasPathDef">GnomeCanvasPathDef</link>*   : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 id="GnomeCanvasBpath.description" role="desc">
+<title role="desc.title">Description</title>
+
+<para>
+A canvas item type for creating a "path" from curve and line segments.
+</para>
+</refsect1>
+
+<refsect1 id="GnomeCanvasBpath.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomeCanvasBpath-struct" role="struct">
+<title>GnomeCanvasBpath</title>
+<indexterm zone="GnomeCanvasBpath-struct"><primary>GnomeCanvasBpath</primary></indexterm>
+<programlisting>typedef struct _GnomeCanvasBpath GnomeCanvasBpath;</programlisting>
+<para>
+This structure should not be accessed directly. Use the object's properties
+for querying or changing its parameters.
+</para></refsect2>
+
+</refsect1>
+<refsect1 id="GnomeCanvasBpath.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GnomeCanvasBpath--bpath" role="property"><title>The <literal>&quot;bpath&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasBpath--bpath"><primary>GnomeCanvasBpath:bpath</primary></indexterm>
+<programlisting>  &quot;bpath&quot;                    <link linkend="GnomeCanvasPathDef">GnomeCanvasPathDef</link>*   : Read / Write</programlisting>
+<para>
+Pointer to a GnomeCanvasPathDef structure. This can be created by a call to
+<link linkend="gnome-canvas-path-def-new"><function>gnome_canvas_path_def_new()</function></link>.
+</para></refsect2>
+</refsect1>
+
+
+
+<refsect1 id="GnomeCanvasBpath.see-also">
+<title>See Also</title>
+<para>
+<link linkend="GnomeCanvasPathDef"><type>GnomeCanvasPathDef</type></link>
+</para>
+</refsect1>
+
+</refentry>

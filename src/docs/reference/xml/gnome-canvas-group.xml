@@ -1,0 +1,97 @@
+<refentry id="GnomeCanvasGroup">
+<refmeta>
+<refentrytitle role="top_of_page" id="GnomeCanvasGroup.top_of_page">GnomeCanvasGroup</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMECANVAS Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>GnomeCanvasGroup</refname>
+<refpurpose>Canvas item group</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="GnomeCanvasGroup.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+#include &lt;libgnomecanvas/libgnomecanvas.h&gt;
+
+                    <link linkend="GnomeCanvasGroup-struct">GnomeCanvasGroup</link>;
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="GnomeCanvasGroup.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GnomeCanvasItem">GnomeCanvasItem</link>
+                     +----GnomeCanvasGroup
+                           +----<link linkend="GnomeCanvasClipgroup">GnomeCanvasClipgroup</link>
+</synopsis>
+</refsect1>
+
+
+
+
+
+<refsect1 id="GnomeCanvasGroup.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="GnomeCanvasGroup--x">x</link>&quot;                        <link linkend="gdouble">gdouble</link>               : Read / Write
+  &quot;<link linkend="GnomeCanvasGroup--y">y</link>&quot;                        <link linkend="gdouble">gdouble</link>               : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 id="GnomeCanvasGroup.description" role="desc">
+<title role="desc.title">Description</title>
+
+<para>
+A canvas item that groups other canvas items. A canvas group is used
+for organization, determining drawing stacking order, and for
+applying transforms on all items in the group.
+</para>
+<para>
+The <link linkend="GnomeCanvas"><type>GnomeCanvas</type></link> widget contains a toplevel "root" group which can be
+queried with a call to <link linkend="gnome-canvas-root"><function>gnome_canvas_root()</function></link>.
+</para>
+</refsect1>
+
+<refsect1 id="GnomeCanvasGroup.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomeCanvasGroup-struct" role="struct">
+<title>GnomeCanvasGroup</title>
+<indexterm zone="GnomeCanvasGroup-struct"><primary>GnomeCanvasGroup</primary></indexterm>
+<programlisting>typedef struct _GnomeCanvasGroup GnomeCanvasGroup;</programlisting>
+<para>
+This structure should not be accessed directly. Use the object's properties
+for querying or changing its parameters.
+</para></refsect2>
+
+</refsect1>
+<refsect1 id="GnomeCanvasGroup.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GnomeCanvasGroup--x" role="property"><title>The <literal>&quot;x&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasGroup--x"><primary>GnomeCanvasGroup:x</primary></indexterm>
+<programlisting>  &quot;x&quot;                        <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+X coordinate of group's origin.
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasGroup--y" role="property"><title>The <literal>&quot;y&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasGroup--y"><primary>GnomeCanvasGroup:y</primary></indexterm>
+<programlisting>  &quot;y&quot;                        <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+Y coordinate of group's origin.
+</para><para>Default value: 0</para>
+</refsect2>
+</refsect1>
+
+
+
+
+</refentry>

@@ -1,0 +1,94 @@
+<refentry id="GnomeCanvasClipgroup">
+<refmeta>
+<refentrytitle role="top_of_page" id="GnomeCanvasClipgroup.top_of_page">GnomeCanvasClipgroup</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMECANVAS Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>GnomeCanvasClipgroup</refname>
+<refpurpose>Canvas group that implements clipping</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="GnomeCanvasClipgroup.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+#include &lt;libgnomecanvas/libgnomecanvas.h&gt;
+
+                    <link linkend="GnomeCanvasClipgroup-struct">GnomeCanvasClipgroup</link>;
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="GnomeCanvasClipgroup.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GnomeCanvasItem">GnomeCanvasItem</link>
+                     +----<link linkend="GnomeCanvasGroup">GnomeCanvasGroup</link>
+                           +----GnomeCanvasClipgroup
+</synopsis>
+</refsect1>
+
+
+
+
+
+<refsect1 id="GnomeCanvasClipgroup.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="GnomeCanvasClipgroup--path">path</link>&quot;                     <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="GnomeCanvasClipgroup--wind">wind</link>&quot;                     <link linkend="guint">guint</link>                 : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 id="GnomeCanvasClipgroup.description" role="desc">
+<title role="desc.title">Description</title>
+
+<para>
+A canvas group object that clips the view of its children to a shape defined by
+a <link linkend="GnomeCanvasPathDef."><type>GnomeCanvasPathDef.</type></link>
+</para>
+</refsect1>
+
+<refsect1 id="GnomeCanvasClipgroup.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomeCanvasClipgroup-struct" role="struct">
+<title>GnomeCanvasClipgroup</title>
+<indexterm zone="GnomeCanvasClipgroup-struct"><primary>GnomeCanvasClipgroup</primary></indexterm>
+<programlisting>typedef struct _GnomeCanvasClipgroup GnomeCanvasClipgroup;</programlisting>
+<para>
+This structure should not be accessed directly. Use the object's properties
+for querying or changing its parameters.
+</para></refsect2>
+
+</refsect1>
+<refsect1 id="GnomeCanvasClipgroup.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GnomeCanvasClipgroup--path" role="property"><title>The <literal>&quot;path&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasClipgroup--path"><primary>GnomeCanvasClipgroup:path</primary></indexterm>
+<programlisting>  &quot;path&quot;                     <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>
+Pointer to a <link linkend="GnomeCanvasPathDef"><type>GnomeCanvasPathDef</type></link> structure which can be created with
+<link linkend="gnome-canvas-path-def-new"><function>gnome_canvas_path_def_new()</function></link>.
+</para></refsect2>
+<refsect2 id="GnomeCanvasClipgroup--wind" role="property"><title>The <literal>&quot;wind&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasClipgroup--wind"><primary>GnomeCanvasClipgroup:wind</primary></indexterm>
+<programlisting>  &quot;wind&quot;                     <link linkend="guint">guint</link>                 : Read / Write</programlisting>
+<para>
+Winding rule (ArtWindRule) enumeration (ART_WIND_RULE_NONZERO,
+ART_WIND_RULE_INTERSECT, ART_WIND_RULE_ODDEVEN, and ART_WIND_RULE_POSITIVE),
+see libart for details. Defines the clipping intersection rule (FIXME?).
+</para><para>Default value: 0</para>
+</refsect2>
+</refsect1>
+
+
+
+
+</refentry>

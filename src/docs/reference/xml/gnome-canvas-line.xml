@@ -1,0 +1,216 @@
+<refentry id="GnomeCanvasLine">
+<refmeta>
+<refentrytitle role="top_of_page" id="GnomeCanvasLine.top_of_page">GnomeCanvasLine</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGNOMECANVAS Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>GnomeCanvasLine</refname>
+<refpurpose>Line canvas item</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="GnomeCanvasLine.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+#include &lt;libgnomecanvas/libgnomecanvas.h&gt;
+
+                    <link linkend="GnomeCanvasLine-struct">GnomeCanvasLine</link>;
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="GnomeCanvasLine.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GnomeCanvasItem">GnomeCanvasItem</link>
+                     +----GnomeCanvasLine
+</synopsis>
+</refsect1>
+
+
+
+
+
+<refsect1 id="GnomeCanvasLine.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="GnomeCanvasLine--arrow-shape-a">arrow-shape-a</link>&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--arrow-shape-b">arrow-shape-b</link>&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--arrow-shape-c">arrow-shape-c</link>&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--cap-style">cap-style</link>&quot;                <link linkend="GdkCapStyle">GdkCapStyle</link>           : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--fill-color">fill-color</link>&quot;               <link linkend="gchar">gchar</link>*                : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--fill-color-gdk">fill-color-gdk</link>&quot;           <link linkend="GdkColor">GdkColor</link>*             : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--fill-color-rgba">fill-color-rgba</link>&quot;          <link linkend="guint">guint</link>                 : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--fill-stipple">fill-stipple</link>&quot;             <link linkend="GdkDrawable">GdkDrawable</link>*          : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--first-arrowhead">first-arrowhead</link>&quot;          <link linkend="gboolean">gboolean</link>              : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--join-style">join-style</link>&quot;               <link linkend="GdkJoinStyle">GdkJoinStyle</link>          : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--last-arrowhead">last-arrowhead</link>&quot;           <link linkend="gboolean">gboolean</link>              : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--line-style">line-style</link>&quot;               <link linkend="GdkLineStyle">GdkLineStyle</link>          : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--points">points</link>&quot;                   <link linkend="GnomeCanvasPoints">GnomeCanvasPoints</link>*    : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--smooth">smooth</link>&quot;                   <link linkend="gboolean">gboolean</link>              : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--spline-steps">spline-steps</link>&quot;             <link linkend="guint">guint</link>                 : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--width-pixels">width-pixels</link>&quot;             <link linkend="guint">guint</link>                 : Read / Write
+  &quot;<link linkend="GnomeCanvasLine--width-units">width-units</link>&quot;              <link linkend="gdouble">gdouble</link>               : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 id="GnomeCanvasLine.description" role="desc">
+<title role="desc.title">Description</title>
+
+<para>
+A canvas item for drawing lines. This canvas item uses a <link linkend="GnomeCanvasPoints"><type>GnomeCanvasPoints</type></link>
+structure so one or multiple joined lined segments can be drawn with a single
+<link linkend="GnomeCanvasLine"><type>GnomeCanvasLine</type></link> item.
+</para>
+</refsect1>
+
+<refsect1 id="GnomeCanvasLine.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GnomeCanvasLine-struct" role="struct">
+<title>GnomeCanvasLine</title>
+<indexterm zone="GnomeCanvasLine-struct"><primary>GnomeCanvasLine</primary></indexterm>
+<programlisting>typedef struct _GnomeCanvasLine GnomeCanvasLine;</programlisting>
+<para>
+This structure should not be accessed directly. Use the object's properties
+for querying or changing its parameters.
+</para></refsect2>
+
+</refsect1>
+<refsect1 id="GnomeCanvasLine.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GnomeCanvasLine--arrow-shape-a" role="property"><title>The <literal>&quot;arrow-shape-a&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--arrow-shape-a"><primary>GnomeCanvasLine:arrow-shape-a</primary></indexterm>
+<programlisting>  &quot;arrow-shape-a&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+Distance from tip of arrowhead to center.
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--arrow-shape-b" role="property"><title>The <literal>&quot;arrow-shape-b&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--arrow-shape-b"><primary>GnomeCanvasLine:arrow-shape-b</primary></indexterm>
+<programlisting>  &quot;arrow-shape-b&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+Distance from tip of arrowhead to trailing point, measured along shaft.
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--arrow-shape-c" role="property"><title>The <literal>&quot;arrow-shape-c&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--arrow-shape-c"><primary>GnomeCanvasLine:arrow-shape-c</primary></indexterm>
+<programlisting>  &quot;arrow-shape-c&quot;            <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+Distance of arrowhead trailing points from outside edge of shaft.
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--cap-style" role="property"><title>The <literal>&quot;cap-style&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--cap-style"><primary>GnomeCanvasLine:cap-style</primary></indexterm>
+<programlisting>  &quot;cap-style&quot;                <link linkend="GdkCapStyle">GdkCapStyle</link>           : Read / Write</programlisting>
+<para>
+Determines how the ends of lines are drawn (the line cap style).
+</para><para>Default value: GDK_CAP_BUTT</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--fill-color" role="property"><title>The <literal>&quot;fill-color&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--fill-color"><primary>GnomeCanvasLine:fill-color</primary></indexterm>
+<programlisting>  &quot;fill-color&quot;               <link linkend="gchar">gchar</link>*                : Read / Write</programlisting>
+<para>
+X color specification for line.
+</para><para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--fill-color-gdk" role="property"><title>The <literal>&quot;fill-color-gdk&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--fill-color-gdk"><primary>GnomeCanvasLine:fill-color-gdk</primary></indexterm>
+<programlisting>  &quot;fill-color-gdk&quot;           <link linkend="GdkColor">GdkColor</link>*             : Read / Write</programlisting>
+<para>
+Pointer to an allocated GdkColor to draw the line with.
+</para></refsect2>
+<refsect2 id="GnomeCanvasLine--fill-color-rgba" role="property"><title>The <literal>&quot;fill-color-rgba&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--fill-color-rgba"><primary>GnomeCanvasLine:fill-color-rgba</primary></indexterm>
+<programlisting>  &quot;fill-color-rgba&quot;          <link linkend="guint">guint</link>                 : Read / Write</programlisting>
+<para>
+Line color with an alpha component (in the format 0xRRGGBBAA).
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--fill-stipple" role="property"><title>The <literal>&quot;fill-stipple&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--fill-stipple"><primary>GnomeCanvasLine:fill-stipple</primary></indexterm>
+<programlisting>  &quot;fill-stipple&quot;             <link linkend="GdkDrawable">GdkDrawable</link>*          : Read / Write</programlisting>
+<para>
+Stipple pattern for the line.
+</para></refsect2>
+<refsect2 id="GnomeCanvasLine--first-arrowhead" role="property"><title>The <literal>&quot;first-arrowhead&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--first-arrowhead"><primary>GnomeCanvasLine:first-arrowhead</primary></indexterm>
+<programlisting>  &quot;first-arrowhead&quot;          <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para>
+Specifies whether to draw an arrowhead on the first point of the line.
+</para><para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--join-style" role="property"><title>The <literal>&quot;join-style&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--join-style"><primary>GnomeCanvasLine:join-style</primary></indexterm>
+<programlisting>  &quot;join-style&quot;               <link linkend="GdkJoinStyle">GdkJoinStyle</link>          : Read / Write</programlisting>
+<para>
+Vertex join style for line segments (GDK_JOIN_MITER to join by
+extending each line to meet at an angle, GDK_JOIN_ROUND to join by a
+circular arc, and GDK_JOIN_BEVEL to join by a straight line which
+makes an equal angle with each line).
+</para><para>Default value: GDK_JOIN_MITER</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--last-arrowhead" role="property"><title>The <literal>&quot;last-arrowhead&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--last-arrowhead"><primary>GnomeCanvasLine:last-arrowhead</primary></indexterm>
+<programlisting>  &quot;last-arrowhead&quot;           <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para>
+Specifies whether to draw an arrowhead on the last point of the line.
+</para><para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--line-style" role="property"><title>The <literal>&quot;line-style&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--line-style"><primary>GnomeCanvasLine:line-style</primary></indexterm>
+<programlisting>  &quot;line-style&quot;               <link linkend="GdkLineStyle">GdkLineStyle</link>          : Read / Write</programlisting>
+<para>
+Line dash style.
+</para><para>Default value: GDK_LINE_SOLID</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--points" role="property"><title>The <literal>&quot;points&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--points"><primary>GnomeCanvasLine:points</primary></indexterm>
+<programlisting>  &quot;points&quot;                   <link linkend="GnomeCanvasPoints">GnomeCanvasPoints</link>*    : Read / Write</programlisting>
+<para>
+Pointer to a <link linkend="GnomeCanvasPoints"><type>GnomeCanvasPoints</type></link> structure. This can be created by a
+call to <link linkend="gnome-canvas-points-new"><function>gnome_canvas_points_new()</function></link>.
+</para></refsect2>
+<refsect2 id="GnomeCanvasLine--smooth" role="property"><title>The <literal>&quot;smooth&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--smooth"><primary>GnomeCanvasLine:smooth</primary></indexterm>
+<programlisting>  &quot;smooth&quot;                   <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para>
+Specifies whether to smooth the line using parabolic splines.
+</para><para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--spline-steps" role="property"><title>The <literal>&quot;spline-steps&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--spline-steps"><primary>GnomeCanvasLine:spline-steps</primary></indexterm>
+<programlisting>  &quot;spline-steps&quot;             <link linkend="guint">guint</link>                 : Read / Write</programlisting>
+<para>
+Specifies the number of steps to use when rendering curves.
+</para><para>Default value: 12</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--width-pixels" role="property"><title>The <literal>&quot;width-pixels&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--width-pixels"><primary>GnomeCanvasLine:width-pixels</primary></indexterm>
+<programlisting>  &quot;width-pixels&quot;             <link linkend="guint">guint</link>                 : Read / Write</programlisting>
+<para>
+Width of the line in pixels.  The line width will not be scaled when
+the canvas zoom factor changes.
+</para><para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GnomeCanvasLine--width-units" role="property"><title>The <literal>&quot;width-units&quot;</literal> property</title>
+<indexterm zone="GnomeCanvasLine--width-units"><primary>GnomeCanvasLine:width-units</primary></indexterm>
+<programlisting>  &quot;width-units&quot;              <link linkend="gdouble">gdouble</link>               : Read / Write</programlisting>
+<para>
+Width of the line in canvas units.  The line width will be scaled when
+the canvas zoom factor changes.
+</para><para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+</refsect1>
+
+
+
+
+</refentry>
